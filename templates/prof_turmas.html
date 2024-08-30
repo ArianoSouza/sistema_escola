@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prof-turmas.css') }}">
+</head>
+<body class="flex align-center">
+    <img src="{{ url_for('static', filename='school.svg') }}" alt="logo" class="logo">
+    <div class="container-content flex align-center">
+        <h2>TURMAS</h2>
+        <div>
+            {% if turmas_relacionadas: %}
+                {% for turma in turmas_relacionadas %}
+                    <a href="/home/prof/{{id}}/turmas/{{turma.id}}" class="flex-row align-center">
+                        <button >
+                            {{turma.nome}}
+                        </button>
+                    </a>
+                {% endfor %}
+            {% endif %}               
+        </div>
+    </div>
+</body>
+</html>

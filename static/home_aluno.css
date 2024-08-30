@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.logo{
+    width: 4vw;
+}
+
+
+@media (max-width: 550px) {
+    .logo{
+        width: 15vw;
+        margin-top: 3vw;
+    }
+    .container-content{
+        width: 90%;
+        border: 3px solid #444545;
+        border-radius: 15px;
+        padding: 6vw 0px;
+    }       
+    .container-button{
+        width: 60%;
+        height: 50vw;
+    }
+    .button-link{
+        background-color: #C5E0D8;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 10rem;
+        border: 3px solid #444545;
+    }
+    .msg-bemvindo{
+        margin: 0px 0px 2vw 0px;
+    }
+    div img{
+        width: 20vw;
+    }
+    p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .log-off-button{
+        height: 10vw;
+        background-color: #C5E0D8 ;
+        width: 15vw;
+        text-align: center;
+        text-justify: center;
+        border-radius: 50px;
+        border: 2px solid #444545;
+        margin-top: 5vw;
+        text-decoration: none;
+        color: #444545;
+    }
+
+}

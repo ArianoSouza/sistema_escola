@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}"> 
+     <!-- <link rel="stylesheet" href="./static/login.css"> !-->
+</head>
+<body class="flex align-center">
+    <form action="/login" method="post" class="flex align-center">
+        <div class="flex right">
+            <input type="text" name="matricula" placeholder="MATRÍCULA">
+            <input type="password" name="senha" placeholder="SENHA">
+            <button type="submit">ENTRAR</button>
+        </div>
+    <form>
+    <p>Esqueceu a senha? <a href="">Clique aqui</a></p>
+</body>
+</html>

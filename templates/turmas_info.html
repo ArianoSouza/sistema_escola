@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prof-turmas.css') }}">
+</head>
+<body class="flex align-center">
+    <img src="{{ url_for('static', filename='school.svg') }}" alt="logo" class="logo">
+    <div class="container-content flex align-center">
+        <h2></h2>
+        <form action="" method="get">
+            <input type="text" placeholder="Buscar aluno..." name="aluno">
+        </form>
+        {% if pesq == None or pesq == "": %}
+                    {% for aluno in turma %}
+                            <button >
+                                {{aluno}}
+                            </button>
+                    {% endfor %} 
+        {% else: %}
+                    {% for aluno in turma %}
+                            {% if pesq == aluno:%}
+                            <button >
+                                {{aluno}}
+                            </button>
+                            {% endif %}
+                    {% endfor %} 
+        {% endif %}        
+    </div>
+</body>
+</html>

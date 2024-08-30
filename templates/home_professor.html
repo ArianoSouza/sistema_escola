@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_aluno.css') }}">
+</head>
+<body class="flex align-center">
+    <img src="{{ url_for('static', filename='school.svg') }}" alt="logo" class="logo">
+    <p class="msg-bemvindo">Bem-vindo, {{user_name}}!</p>
+    <div class="container-content flex align-center">
+        <div class="container-button flex justify-center align-center">
+            <a href="/home/prof/{{id}}/turmas" class="button-link flex justify-center align-center ">
+                <img src="{{ url_for('static', filename='people.svg') }}" alt="">
+            </a>
+            <p>Turmas</p>
+        </div>
+        </div>
+    </div>
+    <a href="/" class="log-off-button flex justify-center align-center">Sair</a>
+</body>
+</html>
